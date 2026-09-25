@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const Event = require("../models/Event");
 
 // Create wedding event
@@ -49,7 +50,6 @@ const createEvent = async (req, res) => {
   }
 };
 
-
 // Get logged-in photographer's events
 const getMyEvents = async (req, res) => {
   try {
@@ -75,7 +75,6 @@ const getMyEvents = async (req, res) => {
     });
   }
 };
-
 
 // Get event by event code for guests
 const getEventByCode = async (req, res) => {
@@ -118,11 +117,16 @@ const getEventByCode = async (req, res) => {
   }
 };
 
-
 // Mark event as completed
 const completeEvent = async (req, res) => {
   try {
     const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({
+        message: "Invalid event ID",
+      });
+    }
 
     const event = await Event.findOne({
       _id: id,
@@ -167,11 +171,16 @@ const completeEvent = async (req, res) => {
   }
 };
 
-
 // Cancel event
 const cancelEvent = async (req, res) => {
   try {
     const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({
+        message: "Invalid event ID",
+      });
+    }
 
     const event = await Event.findOne({
       _id: id,
@@ -216,11 +225,16 @@ const cancelEvent = async (req, res) => {
   }
 };
 
-
 // Archive event
 const archiveEvent = async (req, res) => {
   try {
     const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({
+        message: "Invalid event ID",
+      });
+    }
 
     const event = await Event.findOne({
       _id: id,
@@ -267,11 +281,16 @@ const archiveEvent = async (req, res) => {
   }
 };
 
-
 // Soft delete archived event
 const softDeleteEvent = async (req, res) => {
   try {
     const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(400).json({
+        message: "Invalid event ID",
+      });
+    }
 
     const event = await Event.findOne({
       _id: id,
@@ -315,7 +334,6 @@ const softDeleteEvent = async (req, res) => {
     });
   }
 };
-
 
 module.exports = {
   createEvent,
