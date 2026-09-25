@@ -1,0 +1,144 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #fffaf7;
+    box-sizing: border-box;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 460px;
+    background: #ffffff;
+    border: 1px solid #eadfe0;
+    border-radius: 18px;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+.login-label {
+    color: #bd6f7b;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 0 0 15px;
+}
+
+.login-card h1 {
+    color: #292324;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.login-description {
+    color: #6b5f61;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #292324;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d8cbcd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #292324;
+    background: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #bd6f7b;
+}
+
+.form-group input::placeholder {
+    color: #9a8e90;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: 2px solid #bd6f7b;
+    border-radius: 8px;
+    background: #bd6f7b;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #a85e6a;
+    border-color: #a85e6a;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+    .login-page {
+        padding: 40px 18px;
+    }
+
+    .login-card {
+        padding: 30px 22px;
+    }
+
+    .login-card h1 {
+        font-size: 34px;
+    }
+
+    .login-description {
+        font-size: 15px;
+    }
+}
+
+.register-link-text {
+    margin: 22px 0 0;
+    text-align: center;
+    color: #6b5f61;
+    font-size: 15px;
+}
+
+.register-link-text a {
+    color: #bd6f7b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link-text a:hover {
+    text-decoration: underline;
+}
+
+.form-error {
+    margin: -8px 0 0;
+    color: #c0394b;
+    font-size: 14px;
+}

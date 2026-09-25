@@ -1,0 +1,209 @@
+.how-it-works {
+  padding: 90px 8%;
+  background: #fffaf8;
+}
+
+.how-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 55px;
+}
+
+.section-label {
+  color: #bd6f7b;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.how-header h2 {
+  color: #292324;
+  font-size: 48px;
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+
+.section-description {
+  color: #6b5f61;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.step-card {
+  background: #ffffff;
+  border: 1px solid #eadfe0;
+  border-radius: 18px;
+  padding: 40px;
+  min-height: 220px;
+  box-sizing: border-box;
+}
+
+.step-number {
+  display: block;
+  color: #bd6f7b;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+.step-card h3 {
+  color: #292324;
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+
+.step-card p {
+  color: #6b5f61;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .how-it-works {
+    padding: 70px 6%;
+  }
+
+  .how-header {
+    margin-bottom: 40px;
+  }
+
+  .section-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .how-header h2 {
+    font-size: 38px;
+    line-height: 1.15;
+  }
+
+  .section-description {
+    font-size: 17px;
+  }
+
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .step-card {
+    padding: 30px;
+    min-height: 210px;
+  }
+
+  .step-number {
+    margin-bottom: 25px;
+  }
+
+  .step-card h3 {
+    font-size: 22px;
+  }
+
+  .step-card p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .how-it-works {
+    padding: 60px 20px;
+  }
+
+  .how-header {
+    margin-bottom: 35px;
+  }
+
+  .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+
+  .how-header h2 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .section-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .steps-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .step-card {
+    width: 100%;
+    min-height: auto;
+    padding: 30px 25px;
+  }
+
+  .step-number {
+    margin-bottom: 20px;
+  }
+
+  .step-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .step-card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 400px) {
+
+  .how-it-works {
+    padding: 50px 18px;
+  }
+
+  .how-header h2 {
+    font-size: 30px;
+  }
+
+  .section-description {
+    font-size: 15px;
+  }
+
+  .step-card {
+    padding: 25px 22px;
+  }
+
+  .step-card h3 {
+    font-size: 21px;
+  }
+
+  .step-card p {
+    font-size: 15px;
+  }
+}

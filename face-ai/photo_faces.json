@@ -1,0 +1,22 @@
+{
+    "photo": "test_group.jpeg",
+    "face_count": 4,
+    "faces": [
+        {
+            "face_id": 1,
+            "embedding_file": "group_face_1_embedding.npy"
+        },
+        {
+            "face_id": 2,
+            "embedding_file": "group_face_2_embedding.npy"
+        },
+        {
+            "face_id": 3,
+            "embedding_file": "group_face_3_embedding.npy"
+        },
+        {
+            "face_id": 4,
+            "embedding_file": "group_face_4_embedding.npy"
+        }
+    ]
+}

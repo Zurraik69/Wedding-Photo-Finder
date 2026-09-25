@@ -1,0 +1,16 @@
+.footer {
+    padding: 35px 8%;
+    background: #292324;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.footer-credit {
+    margin-top: 8px !important;
+    color: #d9a0a8;
+}

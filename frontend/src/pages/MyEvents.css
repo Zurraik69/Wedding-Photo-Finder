@@ -1,0 +1,327 @@
+/* =========================
+   My Events Page
+========================= */
+
+.my-events-page {
+  min-height: 100vh;
+  background-color: #f8f6f2;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.my-events-navbar {
+  height: 72px;
+  padding: 0 6%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e1db;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-events-logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d2926;
+}
+
+.my-events-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.my-events-nav-links a {
+  color: #4b3f36;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.my-events-nav-links a:hover {
+  color: #8b5e3c;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.my-events-container {
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.my-events-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.my-events-header h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #292421;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.my-events-header p {
+  margin: 8px 0 0;
+  color: #6f665f;
+  font-size: 17px;
+}
+
+.back-dashboard-btn {
+  padding: 11px 18px;
+  border: 1px solid #8b5e3c;
+  border-radius: 7px;
+
+  color: #8b5e3c;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.back-dashboard-btn:hover {
+  background-color: #8b5e3c;
+  color: #ffffff;
+}
+
+
+/* =========================
+   Archived Count
+========================= */
+
+.archived-events-count {
+  margin-bottom: 22px;
+
+  color: #5f554e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   Events Grid
+========================= */
+
+.my-events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* =========================
+   Event Card
+========================= */
+
+.my-event-card {
+  padding: 25px;
+  background-color: #ffffff;
+
+  border: 1px solid #e5ded6;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   Card Header
+========================= */
+
+.my-event-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.my-event-card-header h2 {
+  margin: 0;
+
+  color: #292421;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   Archived Badge
+========================= */
+
+.archived-badge {
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background-color: #eee9e3;
+  color: #665b53;
+
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   Event Details
+========================= */
+
+.my-event-details {
+  padding-top: 5px;
+}
+
+.my-event-details p {
+  margin: 11px 0;
+
+  color: #514a45;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.my-event-details strong {
+  color: #302b27;
+}
+
+
+/* =========================
+   Delete Event Button
+========================= */
+
+.delete-event-btn {
+  margin-top: 18px;
+
+  padding: 10px 17px;
+
+  border: 1px solid #d8a6a6;
+  border-radius: 7px;
+
+  background-color: #fff7f7;
+  color: #b42323;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.delete-event-btn:hover {
+  background-color: #b42323;
+  border-color: #b42323;
+  color: #ffffff;
+}
+
+.delete-event-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* =========================
+   Loading / Error / Empty
+========================= */
+
+.my-events-message {
+  padding: 40px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5ded6;
+  border-radius: 10px;
+
+  text-align: center;
+  color: #6f665f;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #b42323;
+  border-color: #e0b4b4;
+  background-color: #fff7f7;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .my-events-navbar {
+    padding: 0 4%;
+  }
+
+  .my-events-nav-links {
+    gap: 15px;
+  }
+
+  .my-events-container {
+    width: 92%;
+    padding-top: 40px;
+  }
+
+  .my-events-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .my-events-header h1 {
+    font-size: 38px;
+  }
+
+  .my-events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .my-events-navbar {
+    height: auto;
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .my-events-nav-links {
+    gap: 18px;
+  }
+
+  .my-events-header h1 {
+    font-size: 34px;
+  }
+
+  .my-event-card {
+    padding: 20px;
+  }
+
+  .my-event-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
